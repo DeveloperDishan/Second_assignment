@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    /* color: #fff; */
+}
+
+.btn {
+    background-color: #DD0000;
+    padding: 16px 25px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    color: #fff;
+}
+
+.btn2 {
+    height: 42px;
+    width: 143px;
+    background-color: #fff;
+    color: black;
+    display: inline-block;
+    line-height: 42px;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+/* common css part */
+/* banner css part start */
+#banner {
+    height: 646px;
+    width: 1321px;
+    background-color: #161616;
+    border-radius: 16px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+    margin: 0 auto 100px;
+}
+
+.banner_main {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.banner_text {
+    width: 39%;
+    color: #fff;
+}
+
+.banner_text h1 {
+    font-weight: 700;
+    font-size: 70px;
+}
+
+.banner_text p {
+    font-weight: 400;
+    font-size: 16px;
+    margin: 20px 0 35px;
+}
+
+.banner_pic {
+    width: 46%;
+}
+
+.banner_pic img {
+    width: 100%;
+
+}
+
+/* banner css part end */
+/* middle css part start*/
+.middle_part {
+    width: 1321px;
+    margin: 0 auto 100px;
+}
+
+
+.middle_part_main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 20px;
+}
+
+.middle_single_menu {
+    height: 279px;
+    width: 279px;
+    background-color: #161616;
+    text-align: center;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border: 1px solid green;
+}
+
+.middle_single_menu li {
+    margin: 39px 0;
+}
+
+.middle_single_menu li .btn2:hover {
+    background-color: #DD0000;
+    color: #fff;
+}
+
+.middle_dual_main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.dual_item {
+    border: 1px solid red;
+    padding: 10px;
+}
+
+/* middle css part end */
+
+footer {
+    padding: 100px;
+    background-color: #161616;
+    text-align: center;
+    color: #fff;
+
+}
+
+hr {
+    margin: 30px 0;
+}
+
+.footer_text {
+    display: flex;
+    justify-content: space-evenly;
+}
