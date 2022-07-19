@@ -98,8 +98,8 @@ a {
 
 
 .middle_part_main {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    /* grid-template-columns: repeat(2, 1fr); */
     column-gap: 20px;
 }
 
@@ -136,6 +136,10 @@ a {
     padding: 10px;
 }
 
+.dual_thamnail img {
+    width: 100%;
+}
+
 /* middle css part end */
 
 footer {
@@ -154,3 +158,60 @@ hr {
     display: flex;
     justify-content: space-evenly;
 }
+
+/* reponsive design */
+/* mobile device */
+@media only screen and (max-width: 600px) {
+    #banner {
+        height: 472px;
+        width: 334px;
+    }
+
+    .banner_main {
+        flex-direction: column;
+    }
+
+    .banner_text {
+        width: 70%;
+        margin-top: 30px;
+    }
+
+    .banner_text h1 {
+        font-weight: 700;
+        font-size: 22px;
+    }
+
+    .banner_pic {
+        width: 53%;
+        margin-top: 20px;
+    }
+
+    .middle_part {
+        width: 100%;
+    }
+
+    .middle_single_menu {
+        background-color: transparent;
+    }
+
+    .btn2 {
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    }
+
+    .middle_part_main {
+        flex-direction: column;
+        align-items: center;
+        gap: 18px;
+    }
+
+    .middle_dual_main {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .footer_text {
+        flex-direction: column;
+        row-gap: 18px;
+    }
+}
+
+/* tab device */
