@@ -11,7 +11,6 @@ li {
 
 a {
     text-decoration: none;
-    /* color: #fff; */
 }
 
 .btn {
@@ -180,6 +179,11 @@ a {
     margin: 10px 0;
 }
 
+.dual_text span {
+    color: #161616b1;
+    font-size: 16px;
+}
+
 .dual_text .secon_spa {
     margin-left: 10px;
 }
@@ -268,20 +272,16 @@ hr {
 }
 
 .little {
-    width: 83%;
+    width: 100%;
 }
 
 /* group part end */
 
-
-
-
-
-
-
 /* reponsive design */
 /* mobile device */
 @media only screen and (max-width: 650px) {
+
+    /* banner part css */
     #banner {
         height: 472px;
         width: 334px;
@@ -298,6 +298,11 @@ hr {
     .banner_text {
         width: 70%;
         margin-top: 30px;
+        text-align: center;
+    }
+
+    .banner_text .btn {
+        padding: 8px 12px;
     }
 
     .banner_text h1 {
@@ -305,11 +310,14 @@ hr {
         font-size: 22px;
     }
 
+
     .banner_pic {
         width: 51%;
         margin-top: 20px;
     }
 
+
+    /* middle part css */
     .middle_part {
         width: 100%;
     }
@@ -332,10 +340,13 @@ hr {
         grid-template-columns: repeat(1, 1fr);
     }
 
+
+    /* footer part css */
     .footer_text {
         flex-direction: column;
         row-gap: 18px;
     }
+
 
     /* next page upcomming part */
     .dual_flag_main {
@@ -345,6 +356,8 @@ hr {
 
 /* tab device */
 @media only screen and (min-width: 768px) and (max-width:999px) {
+
+    /* banner part css */
     #banner {
         width: 734px;
         height: 398px;
@@ -368,6 +381,8 @@ hr {
 
     }
 
+
+    /* middle part css */
     .middle_part {
         width: 100%;
     }
@@ -405,6 +420,7 @@ hr {
     .middle_extra {
         display: none;
     }
+
 
     /* next page upcomming part */
     .dual_flag_main {
