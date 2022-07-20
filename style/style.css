@@ -214,6 +214,10 @@ hr {
     justify-content: space-evenly;
 }
 
+.footer_text li a {
+    color: #fff;
+}
+
 .footer_icon {
     color: #fff;
     font-size: 30px;
@@ -258,6 +262,16 @@ hr {
 }
 
 /* upcoming part end */
+/* group part start */
+.text_aling {
+    text-align: center;
+}
+
+.little {
+    width: 83%;
+}
+
+/* group part end */
 
 
 
@@ -267,7 +281,7 @@ hr {
 
 /* reponsive design */
 /* mobile device */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 650px) {
     #banner {
         height: 472px;
         width: 334px;
@@ -292,7 +306,7 @@ hr {
     }
 
     .banner_pic {
-        width: 53%;
+        width: 51%;
         margin-top: 20px;
     }
 
@@ -330,7 +344,7 @@ hr {
 }
 
 /* tab device */
-@media only screen and (min-width: 768px) and (max-width:991px) {
+@media only screen and (min-width: 768px) and (max-width:999px) {
     #banner {
         width: 734px;
         height: 398px;
@@ -388,6 +402,10 @@ hr {
         display: block;
     }
 
+    .middle_extra {
+        display: none;
+    }
+
     /* next page upcomming part */
     .dual_flag_main {
         grid-template-columns: repeat(2, 1fr);
@@ -395,5 +413,10 @@ hr {
 
     .flag_img {
         text-align: center;
+    }
+
+    /* group page css */
+    .little {
+        width: 100%;
     }
 }
