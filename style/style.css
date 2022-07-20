@@ -23,6 +23,7 @@ a {
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
     color: #fff;
+    position: relative;
 }
 
 .btn2 {
@@ -56,7 +57,37 @@ a {
     -ms-border-radius: 16px;
     -o-border-radius: 16px;
     margin: 0 auto 100px;
+    position: relative;
+    margin-top: 20px;
 }
+
+#banner:hover .banner_ball {
+    top: 0px;
+    left: 0px;
+    opacity: 1;
+}
+
+.banner_ball {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    background-color: skyblue;
+    border-radius: 50%;
+    top: 44px;
+    left: 809px;
+    opacity: 0;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition: 0.8s;
+    -webkit-transition: 0.8s;
+    -moz-transition: 0.8s;
+    -ms-transition: 0.8s;
+    -o-transition: 0.8s;
+}
+
+
 
 .banner_main {
     display: flex;
@@ -99,7 +130,6 @@ a {
 
 .middle_part_main {
     display: flex;
-    /* grid-template-columns: repeat(2, 1fr); */
     column-gap: 20px;
 }
 
@@ -132,18 +162,43 @@ a {
 }
 
 .dual_item {
-    border: 1px solid red;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
     padding: 10px;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
 }
+
 
 .dual_thamnail img {
     width: 100%;
 }
 
+.dual_text h4 {
+    margin: 10px 0;
+}
+
+.dual_text .secon_spa {
+    margin-left: 10px;
+}
+
+.dual_text button {
+    margin-top: 10px;
+    padding: 5px 30px;
+}
+
+.hidden_btn {
+    text-align: center;
+    margin-top: 54px;
+    display: none;
+}
+
 /* middle css part end */
 
 footer {
-    padding: 100px;
+    padding: 73px;
     background-color: #161616;
     text-align: center;
     color: #fff;
@@ -159,12 +214,67 @@ hr {
     justify-content: space-evenly;
 }
 
+.footer_icon {
+    color: #fff;
+    font-size: 30px;
+    margin-top: 65px;
+}
+
+.footer_icon a {
+    color: #fff;
+    padding: 0 7px;
+}
+
+/* upcoming part start */
+.dual_flag_main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+
+}
+
+.flag_item {
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    padding: 35px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.flag_img span {
+    position: relative;
+    top: -17px;
+    left: 0;
+}
+
+.flag_text {
+    text-align: center;
+}
+
+.flag_text h4 {
+    margin: 15px 0;
+}
+
+/* upcoming part end */
+
+
+
+
+
+
+
 /* reponsive design */
 /* mobile device */
 @media only screen and (max-width: 600px) {
     #banner {
         height: 472px;
         width: 334px;
+    }
+
+    .banner_ball {
+        display: none;
     }
 
     .banner_main {
@@ -212,6 +322,78 @@ hr {
         flex-direction: column;
         row-gap: 18px;
     }
+
+    /* next page upcomming part */
+    .dual_flag_main {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
 
 /* tab device */
+@media only screen and (min-width: 768px) and (max-width:991px) {
+    #banner {
+        width: 734px;
+        height: 398px;
+    }
+
+    .banner_ball {
+        display: none;
+    }
+
+    .banner_text h1 {
+        font-weight: 700;
+        font-size: 40px;
+    }
+
+    .banner_text {
+        width: 42%;
+    }
+
+    .banner_pic {
+        width: 51%;
+
+    }
+
+    .middle_part {
+        width: 100%;
+    }
+
+    .middle_part_main {
+        flex-direction: column;
+    }
+
+    .middle_single_menu {
+        height: 74px;
+        background-color: transparent;
+        border: none;
+        display: flex;
+    }
+
+    .middle_single_menu li {
+        margin: 0 61px;
+    }
+
+    .btn2 {
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    }
+
+    .middle_dual_main {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0 30px;
+    }
+
+    .hidden_btn {
+        text-align: center;
+        margin-top: 54px;
+        display: block;
+    }
+
+    /* next page upcomming part */
+    .dual_flag_main {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .flag_img {
+        text-align: center;
+    }
+}
