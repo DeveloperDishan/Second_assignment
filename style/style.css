@@ -200,7 +200,7 @@ a {
 }
 
 /* middle css part end */
-
+/* footer css part start */
 footer {
     padding: 73px;
     background-color: #161616;
@@ -233,12 +233,12 @@ hr {
     padding: 0 7px;
 }
 
+/* footer css part start */
 /* upcoming part start */
 .dual_flag_main {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 40px;
-
 }
 
 .flag_item {
